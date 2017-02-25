@@ -1,7 +1,7 @@
 syms re ra l theta
 syms dre dra dl dtheta
 rl = sqrt(re^2+(re+ra)^2-2*re*(re+ra)*cos(l))
-phi = theta + asin((re/rl)*sin(l))
+phi = theta - asin((re/rl)*sin(l))
 P = 2*exp(-0.5*(phi/0.4)^2)
 
 %the fractional error of power transmitted from satellite (not including propogation to ground)
